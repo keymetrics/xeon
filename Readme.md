@@ -36,3 +36,23 @@ First use the data generator or make sure you have a data.json file in source fo
 
 Create local server (ex: `php -S localhost:8080`) in main folder and access visual.html via navigator to check the graph
 
+# PMX smart Alert tester
+
+Tests current implementation of pmx Probe Alert vs datasets in `samples` folder
+
+```bash
+
+$ node testpmx.js
+
+```
+
+Should print `[filename] has been called !` in case of true positive and `[filename] should not have been called` in case of false positive
+
+ToDo
+
+- Put more info when alert pops (value, median...) + color and time passed indications
+
+- More diverse generation algorithm
+
+- Automate and label precisely the generation and visualisation process
+
